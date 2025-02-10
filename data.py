@@ -1,3 +1,4 @@
+#Lista com strings do boneco para ser exibido no jogo
 stickman_figure = [
     """
     ----|
@@ -50,9 +51,10 @@ stickman_figure = [
     """
 ]
 
+#Palavras para serem aleatóriamente utilizadas no jogo
 words = [
-    "casa", "carro", "árvore", "praia", "montanha", "rio", "cidade", "festa", "comida",
-    "amigo", "família", "escola", "trabalho", "livro", "música", "filme", "jogo", "tempo",
+    "casa", "carro", "arvore", "praia", "montanha", "rio", "cidade", "festa", "comida",
+    "amigo", "família", "escola", "trabalho", "livro", "musica", "filme", "jogo", "tempo",
     "sol", "chuva", "vento", "mar", "floresta", "animal", "pessoa", "criança", "homem",
     "mulher", "feliz", "triste", "bonito", "feio", "grande", "pequeno", "rápido", "lento"
 ]
