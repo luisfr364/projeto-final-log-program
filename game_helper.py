@@ -1,6 +1,6 @@
-from gamefile import Game
+from game import Game
 
-class Game_Helper():
+class GameHelper():
 
   def start_game(self):
     print("############## Jogo da forca V.1.0.0 ##############")
@@ -10,9 +10,14 @@ class Game_Helper():
     game.start()
 
     self.game_finish()
+    
     #Apenas para debug
     # print(f"a palavra é: {word}")
   
   def game_finish(self):
-    print("continuando....................")
-    self.start_game()
+    should_continue = input("Deseja continuar? [s/n]: ")
+    if should_continue == "s":
+      self.start_game()
+    
+    return
+    

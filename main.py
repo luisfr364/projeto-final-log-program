@@ -1,4 +1,4 @@
+from game_helper import GameHelper
 
-from gamhelper import Game_Helper
-game_helpe = Game_Helper()
+game_helpe = GameHelper()
 game_helpe.start_game()
