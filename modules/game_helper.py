@@ -1,10 +1,13 @@
-from game import Game
-
+from modules.game import Game
+import time
 class GameHelper():
 
   def start_game(self):
-    print("############## Jogo da forca V.1.0.0 ##############")
-    print("\nTente acertar a palavra no número mínimo de tentativas")
+    print("############## Jogo da forca V.1.1.0 ##############")
+    time.sleep(0.5)
+    print("\n\nTente acertar a palavra no número mínimo de tentativas")
+
+    time.sleep(2)
     
     game = Game()
     game.start()
