@@ -1,8 +1,9 @@
+######
+# Autores: Luis Fernando Farias Oliveira, Mário Gomes de Sousa Filho
+
 from data.data import words, stickman_figure
 from modules.os_interaction import OSInteraction
 import random
-
-#OBS: Algumas partes do código possuem prints apenas para simples debug
 
 class Game(): 
 
@@ -10,7 +11,6 @@ class Game():
   def __init__(self):
     
     self.word = random.choice(words) #Seleção aleatória provinda da variável "words" do arquivo "data.py"
-    
     
     self.guess_tries = 0 #Número de tentativas totais
     self.wrong_guesses = 0 #Número de tentativas incorretas
@@ -29,7 +29,6 @@ class Game():
 
     #Loop para continuar executando a lógica (para apenas quando o número de tentativas for maior do
     # que a quantidade de stickmans)
-    #TODO implementar lógica de vitória
     while self.wrong_guesses < len(stickman_figure) - 1:
       OSInteraction().clear_terminal() #Limpa tudo no terminal
       print(stickman_figure[self.wrong_guesses])
@@ -53,7 +52,7 @@ class Game():
   def print_letters_and_check_win(self, letters_found, found_letters_display_str): 
 
     for char in self.word:
-        if char in letters_found:
+        if char in letters_found or char == " " or char == "-":
           found_letters_display_str += char
         else:
           found_letters_display_str += "_"
