@@ -1,3 +1,6 @@
+###### Lógica de Programação ######
+# Autores: Luis Fernando Farias Oliveira, Mário Gomes de Sousa Filho
+
 from tkinter import N
 from modules.game import Game
 import time

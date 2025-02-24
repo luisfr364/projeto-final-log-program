@@ -1,4 +1,4 @@
-######
+###### Lógica de Programação ######
 # Autores: Luis Fernando Farias Oliveira, Mário Gomes de Sousa Filho
 
 from data.data import words, stickman_figure
